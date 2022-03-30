@@ -1,11 +1,9 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
+ï»¿using System;
 using UnityEngine;
 
 public class spriteSysyem : MonoBehaviour
 {
-    //½ºÇÁ¶óÀÌÆ® 3Á¾·ù
+    //ìŠ¤í”„ë¼ì´íŠ¸ 3ì¢…ë¥˜
     public GameObject squa;
     public GameObject Circ;
     public GameObject Cap;
@@ -21,13 +19,13 @@ public class spriteSysyem : MonoBehaviour
     public sprite s;
 
     Action sp;
-`
+
     void Update()
     {
-        //action ÀÛµ¿
+        //action ì‘ë™
         sp();
 
-        //½ºÀ§Ä¡¹®À¸·Î ½ºÇÁ¶óÀÌÆ® ±³Ã¼
+        //ìŠ¤ìœ„ì¹˜ë¬¸ìœ¼ë¡œ ìŠ¤í”„ë¼ì´íŠ¸ êµì²´
         switch (s)
         {
             case sprite.squa:
@@ -48,7 +46,7 @@ public class spriteSysyem : MonoBehaviour
         }
     }
 
-    //action ¹Ş¾Æ¿À±â
+    //action ë°›ì•„ì˜¤ê¸°
     public void Change(Action change)
     {
         sp = change;
